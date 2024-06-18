@@ -1,0 +1,49 @@
+.body {
+  background-color: #f0f0f0;
+}
+
+#Main-title {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #333;
+}
+
+.table {
+  margin-top: 10px;
+}
+
+.box_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px; /* Add padding to the right */
+}
+
+.box_1 h2 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  color: red;
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.box_1 .btn {
+  margin-left: auto;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+h6.message {
+  color: red;
+  text-align: center;
+}
+
+h6.insert_msg {
+  color: green;
+  text-align: center;
+}
