@@ -22,7 +22,7 @@
   padding-right: 20px; /* Add padding to the right */
 }
 
-.box_1 h2 {
+#All_st {
   flex-grow: 1;
   text-align: center;
   margin: 0;
@@ -46,4 +46,27 @@ h6.message {
 h6.insert_msg {
   color: green;
   text-align: center;
+}
+
+.form-group_1 {
+  margin: 10px 20px;
+}
+
+.form-group_1 label {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.form-group_1 input {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-group_1 input:hover {
+  transform: translateY(-5px); /* Makes the box pop up */
+  box-shadow: 0 2px 20px rgb(69, 70, 70); /* Updated box shadow on hover */
+  border: 1px solid #333; /* Blue outline on hover */
+}
+
+.form-group_1 input ::placeholder {
+  color: tomato;
 }

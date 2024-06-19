@@ -4,7 +4,7 @@
 <table class="table table-hover table-bordered table-striped">
 
     <div class="box_1">
-    <h2>All students</h2>
+    
     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">New Student Entry</button>
     </div>
 
@@ -41,11 +41,11 @@
             <td><?php echo  $row['first_name']; ?></td>
             <td><?php echo  $row['last_name']; ?></td>
             <td><?php echo  $row['age']; ?></td>
-            <td><a href="update.php" class="btn btn-success" >Update</a></td>
-            <td><a href="#" class="btn btn-danger" class="btn btn-cell">Delete</a></td>
+            <td><a href="update.php?id=<?php echo $row['ID']; ?>" class="btn btn-success">Update</a></td>
+            <td><a href="delete_data.php?id=<?php echo $row['ID']; ?>" class="btn btn-danger" class="btn btn-cell">Delete</a></td>
         </tr>
 
-                <?php
+            <?php
                 
             }
         }
