@@ -53,7 +53,7 @@ h6.insert_msg {
 }
 
 .form-group_1 label {
-  margin-top: 25px;
+  margin-top: 20px;
   font-weight: bold;
 }
 
@@ -65,8 +65,4 @@ h6.insert_msg {
   transform: translateY(-5px); /* Makes the box pop up */
   box-shadow: 0 2px 20px rgb(69, 70, 70); /* Updated box shadow on hover */
   border: 1px solid #333; /* Blue outline on hover */
-}
-
-.form-group_1 input ::placeholder {
-  color: tomato;
 }

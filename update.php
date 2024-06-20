@@ -1,8 +1,9 @@
+<link rel="stylesheet" type="text/css" href="style.css">
 <?php include('includes/header.php'); ?>
 <?php include('includes/Connection.php'); ?>
 
 <form>
-    <div class="form-group_1">
+    <div class="form-group">
 
     <label for="f_name">First Name</label>
     <input type="text" name="f_name" class="form-control" placeholder="Enter Your First Name">
