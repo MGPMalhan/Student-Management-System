@@ -1,5 +1,5 @@
-<?php include('includes/header.php'); ?>
-<?php include('includes/Connection.php'); ?>
+    <?php include('includes/header.php'); ?>
+    <?php include('includes/Connection.php'); ?>
 
 <table class="table table-hover table-bordered table-striped">
 
@@ -30,26 +30,21 @@
         
         // if(!$result) : This means if the query is failed in a way
         if(!$result) {
-            die("Query failed".mysqli_error($connection));
+            die("Query failed: " . mysqli_error($connection));
         } else {
-            //Looping through the rows of the database so that we can show each row from the database 
-            while($row = mysqli_fetch_assoc($result)) {
-                ?>
-
-        <tr>
-            <td><?php echo  $row['ID']; // Pulling the exact data from database dynamically in our applcation?></td>
-            <td><?php echo  $row['first_name']; ?></td>
-            <td><?php echo  $row['last_name']; ?></td>
-            <td><?php echo  $row['age']; ?></td>
-            <td><a href="update.php?id=<?php echo $row['ID']; ?>" class="btn btn-success">Update</a></td>
-            <td><a href="delete_data.php?id=<?php echo $row['ID']; ?>" class="btn btn-danger" class="btn btn-cell">Delete</a></td>
-        </tr>
-
-            <?php
-                
+            // Looping through the rows of the database so that we can show each row from the database 
+            while($row = mysqli_fetch_assoc($result)) { ?>
+                <tr>
+                    <td><?php echo $row['ID']; // Pulling the exact data from database dynamically in our application ?></td>
+                    <td><?php echo $row['first_name']; ?></td>
+                    <td><?php echo $row['last_name']; ?></td>
+                    <td><?php echo $row['age']; ?></td>
+                    <td><a href="update.php?id=<?php echo $row['ID']; ?>" class="btn btn-success">Update</a></td>
+                    <td><a href="delete_data.php?id=<?php echo $row['ID']; ?>" class="btn btn-danger" class="btn btn-cell">Delete</a></td>
+                </tr>
+        <?php 
             }
         }
-           
         ?>
 
     </tbody>

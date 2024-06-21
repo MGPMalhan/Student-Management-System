@@ -10,6 +10,6 @@
 </head>
 <body>
 
-<h1 id="Main-title">User Management System</h1>
+<h1 id="Main-title">Student Management System</h1>
 
 <div class="container"></div>
