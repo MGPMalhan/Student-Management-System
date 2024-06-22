@@ -48,6 +48,12 @@ h6.insert_msg {
   text-align: center;
 }
 
+h6.delete_msg {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
 .form-group_1 {
   margin: 10px 20px;
 }

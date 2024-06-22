@@ -50,7 +50,9 @@
     </tbody>
     </table>
 
+    
             <?php
+            // the message you get after the operation is successful
                 if (isset($_GET['message'])) {
                     echo '<h6 class="message">' . $_GET['message'] . '</h6>';
                 }
@@ -59,6 +61,12 @@
             <?php
                 if (isset($_GET['insert_msg'])) {
                     echo '<h6 class="insert_msg">' . $_GET['insert_msg'] . '</h6>';
+                }
+            ?>
+
+            <?php
+                if (isset($_GET['delete_msg'])) {
+                    echo '<h6 class="delete_msg">' . $_GET['delete_msg'] . '</h6>';
                 }
             ?>
 
