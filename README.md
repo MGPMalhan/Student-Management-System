@@ -9,7 +9,7 @@
 
 <h1>Student Management System</h1>
 
-<p>This project is a simple web-based student management system built with PHP and MySQL. It allows users to view, add, update, and delete student records.</p>
+<p>This project is a simple web-based student management system built with PHP MySQL & Bootstrap. It allows users to view, add, update, and delete student records.</p>
 
 <h2>Table of Contents</h2>
 <ul>
